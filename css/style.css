@@ -1,8 +1,39 @@
 /* RESET SIMPLE */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
@@ -14,30 +45,11 @@ body {
 
 /* HEADER */
 
+
 .header {
     position: sticky;
     top: 0;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.7rem 8%;
-    background: rgba(5, 8, 15, 0.95);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
-    backdrop-filter: blur(10px);
-}
-
-.logo {
-    display: flex;
-    flex-direction: column;
-}
-
-.logo-main {
-    font-weight: 700;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    font-size: 0.95rem;
-}
+@@ -73,7 +41,7 @@ body {
 
 .logo-sub {
     font-size: 0.75rem;
@@ -45,10 +57,7 @@ body {
 }
 
 .nav {
-    display: flex;
-    gap: 1.5rem;
-}
-
+@@ -84,29 +52,31 @@ body {
 .nav a {
     text-decoration: none;
     font-size: 0.9rem;
@@ -74,18 +83,14 @@ body {
 
 /* HERO */
 
+
 .hero {
     padding: 5rem 8% 4rem;
     background: radial-gradient(circle at top left, #1a2a4f, #070c12 55%);
 }
 
 .hero-content {
-    max-width: 700px;
-}
-
-.hero h1 {
-    font-size: 2.4rem;
-    margin-bottom: 1rem;
+@@ -119,7 +89,7 @@ body {
 }
 
 .hero p {
@@ -93,11 +98,7 @@ body {
 }
 
 .hero-actions {
-    margin: 1.8rem 0 0.8rem;
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
+@@ -131,12 +101,11 @@ body {
 
 .hero-tagline {
     font-size: 0.9rem;
@@ -106,11 +107,11 @@ body {
 
 /* BOUTONS */
 
+
 .btn {
     display: inline-block;
     padding: 0.7rem 1.4rem;
-    border-radius: 999px;
-    font-size: 0.9rem;
+@@ -145,140 +114,95 @@ body {
     border: 1px solid transparent;
     cursor: pointer;
     text-decoration: none;
@@ -141,10 +142,10 @@ body {
 
 /* SECTIONS GÉNÉRALES */
 
+
 .section {
-    body {
-  background: linear-gradient(45deg, #182646, #070c12);
-}
+    padding: 4rem 8%;
+    background: #050810;
 }
 
 .section-alt {
@@ -156,6 +157,11 @@ body {
     margin-bottom: 0.5rem;
 }
 
+
+
+
+
+
 .section-intro {
     color: #9aa4c6;
     margin-bottom: 2rem;
@@ -163,6 +169,43 @@ body {
 }
 
 /* CARTES SERVICES */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .cards {
     display: grid;
@@ -176,6 +219,12 @@ body {
     padding: 1.4rem 1.3rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+
+
+
+
+
+
 }
 
 .card h3 {
@@ -195,6 +244,7 @@ body {
 
 /* COMPÉTENCES */
 
+
 .skills {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
@@ -207,9 +257,7 @@ body {
     padding: 1.4rem 1.3rem;
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
-
-.skill-group h3 {
-    font-size: 1.05rem;
+@@ -288,15 +212,18 @@ body {
     margin-bottom: 0.7rem;
 }
 
@@ -225,11 +273,11 @@ body {
 
 /* À PROPOS */
 
+
 .about {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    max-width: 800px;
+@@ -305,28 +232,28 @@ body {
 }
 
 .about p {
@@ -243,6 +291,7 @@ body {
 }
 
 /* CONTACT */
+
 
 .contact-wrapper {
     display: grid;
@@ -258,19 +307,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.form-group {
-    margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-}
-
-label {
-    font-size: 0.9rem;
-}
-
-input, select, textarea {
-    background: #050810;
+@@ -346,39 +273,71 @@ input, select, textarea {
     border-radius: 0.4rem;
     border: 1px solid rgba(255, 255, 255, 0.13);
     padding: 0.55rem 0.7rem;
@@ -339,24 +376,11 @@ textarea {
 
 /* RESPONSIVE */
 
+
 @media (max-width: 800px) {
     .nav {
         position: absolute;
-        top: 55px;
-        right: 8%;
-        background: rgba(5, 8, 15, 0.98);
-        flex-direction: column;
-        padding: 0.8rem 1rem;
-        border-radius: 0.6rem;
-        border: 1px solid rgba(255, 255, 255, 0.06);
-        display: none;
-    }
-
-    .nav.open {
-        display: flex;
-    }
-
-    .menu-toggle {
+@@ -400,6 +359,10 @@ textarea {
         display: block;
     }
 
@@ -367,8 +391,7 @@ textarea {
     .hero h1 {
         font-size: 2rem;
     }
-
-    .contact-wrapper {
+@@ -408,3 +371,41 @@ textarea {
         grid-template-columns: 1fr;
     }
 }
@@ -409,4 +432,3 @@ textarea {
     height: 50px;
     margin-bottom:8px;
 }
-
