@@ -142,8 +142,9 @@ body {
 /* SECTIONS GÉNÉRALES */
 
 .section {
-    padding: 4rem 8%;
-    background: #050810;
+    body {
+  background: linear-gradient(45deg, #182646, #070c12);
+}
 }
 
 .section-alt {
